@@ -7,7 +7,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       className="block transform transition duration-300 hover:scale-[1.02]"
       to={`/projects/${project.id}`}
     >
-      <div className="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden-shadow-sm transition hover:shadow-md">
+      <div className="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-sm transition hover:shadow-md">
         <img
           src={project.image}
           alt={project.title}
