@@ -2,8 +2,8 @@ import type { Route } from "./+types/index";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Welcome to ByteBlog" },
-    { name: "description", content: "Custom Website Development" },
+    { title: "ByteBlog | Home" },
+    { name: "description", content: "Homepage of my personal website" },
   ];
 }
 

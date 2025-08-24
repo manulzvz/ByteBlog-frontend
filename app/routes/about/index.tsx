@@ -1,3 +1,12 @@
+import type { Route } from "./+types";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "ByteBlog | About" },
+    { name: "description", content: "Learn more about ByteBlog" },
+  ];
+}
+
 const AboutPage = () => {
   return (
     <>

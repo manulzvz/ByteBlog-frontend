@@ -1,3 +1,12 @@
+import type { Route } from "./+types";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "ByteBlog | Contact" },
+    { name: "description", content: "Get in touch with me" },
+  ];
+}
+
 const ContactPage = () => {
   return (
     <>
