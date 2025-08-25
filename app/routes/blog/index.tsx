@@ -14,8 +14,14 @@ export async function loader({
 }: Route.LoaderArgs): Promise<{ posts: PostMeta[] }> {
   const url = new URL("/posts-meta.json", request.url);
   const response = await fetch(url.href);
+
   if (!response) throw new Error("Failed to fetch data");
+
   const data = await response.json();
+
+  data.sort((a: PostMeta, b: PostMeta) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
 
   return { posts: data };
 }
