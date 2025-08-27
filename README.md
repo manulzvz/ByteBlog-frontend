@@ -87,10 +87,6 @@ The production build can be deployed to any static hosting service or containeri
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ---
 
 Built with ❤️ by [manulzvz](https://github.com/manulzvz).
