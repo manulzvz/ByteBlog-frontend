@@ -75,20 +75,7 @@ const NavBar = () => {
           >
             Home
           </NavLink>
-          <NavLink
-            className={({ isActive }) => (isActive ? active : base)}
-            to="/about"
-            onClick={() => setMenuOpen(false)}
-          >
-            About
-          </NavLink>
-          <NavLink
-            className={({ isActive }) => (isActive ? active : base)}
-            to="/contact"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact
-          </NavLink>
+
           <NavLink
             className={({ isActive }) => (isActive ? active : base)}
             to="/blog"
@@ -96,12 +83,29 @@ const NavBar = () => {
           >
             Blog
           </NavLink>
+
           <NavLink
             className={({ isActive }) => (isActive ? active : base)}
             to="/projects"
             onClick={() => setMenuOpen(false)}
           >
             Projects
+          </NavLink>
+
+          <NavLink
+            className={({ isActive }) => (isActive ? active : base)}
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            className={({ isActive }) => (isActive ? active : base)}
+            to="/contact"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
           </NavLink>
         </div>
       )}
