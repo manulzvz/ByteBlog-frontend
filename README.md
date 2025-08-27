@@ -1,40 +1,77 @@
-# Welcome to React Router!
+# ByteBlog Frontend
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Welcome to the ByteBlog Frontend repository! This project is a modern, responsive web application built with React, TypeScript, and TailwindCSS. It serves as the frontend for the ByteBlog platform, showcasing blog posts, projects, and more.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- **React & TypeScript**: A robust and scalable frontend built with modern technologies.
+- **TailwindCSS**: Utility-first CSS framework for rapid UI development.
+- **React Router**: Client-side routing with server-side data loading.
+- **Dynamic Content**: Fetches data from a Strapi backend.
+- **Responsive Design**: Optimized for all screen sizes.
+
+## Project Structure
+
+```
+.
+├── app/
+│   ├── components/       # Reusable UI components
+│   ├── routes/           # Application routes
+│   ├── types.ts          # TypeScript type definitions
+│   └── app.css           # Global styles
+├── public/               # Static assets
+├── .env                  # Environment variables
+├── package.json          # Project dependencies
+├── tsconfig.json         # TypeScript configuration
+└── vite.config.ts        # Vite configuration
+```
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
 ### Installation
 
-Install the dependencies:
+1. Clone the repository:
 
-```bash
-npm install
-```
+   ```bash
+   git clone https://github.com/manulzvz/ByteBlog-frontend.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd ByteBlog-frontend
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
 ### Development
 
-Start the development server with HMR:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+The application will be available at `http://localhost:5173`.
 
-## Building for Production
+### Environment Variables
+
+Create a `.env` file in the root directory and configure the following variables:
+
+```properties
+VITE_API_URL="http://localhost:1337/api"
+VITE_STRAPI_URL="http://localhost:1337"
+```
+
+### Building for Production
 
 Create a production build:
 
@@ -42,46 +79,18 @@ Create a production build:
 npm run build
 ```
 
-## Deployment
+### Deployment
 
-### Docker Deployment
+The production build can be deployed to any static hosting service or containerized for platforms like Docker.
 
-To build and run using Docker:
+## Contributing
 
-```bash
-docker build -t my-app .
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
+## License
 
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-Built with ❤️ using React Router.
+Built with ❤️ by [manulzvz](https://github.com/manulzvz).
