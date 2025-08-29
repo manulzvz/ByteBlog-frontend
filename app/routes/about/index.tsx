@@ -23,11 +23,7 @@ const AboutPage = () => {
           </h1>
           <p className="text-gray-300 text-lg">
             I'm a results-driven software engineer specializing in modern web
-            technologies. With a proven track record of delivering scalable,
-            high-performance applications, I thrive on solving complex problems
-            and driving projects from concept to launch. My passion for clean
-            code, user experience, and continuous learning makes me a valuable
-            asset to any forward-thinking team.
+            technologies.
           </p>
         </div>
       </div>

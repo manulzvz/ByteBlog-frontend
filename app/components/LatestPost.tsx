@@ -15,7 +15,7 @@ const LatestPost = ({ posts, limit = 3 }: LatestPostProps) => {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-12">
-      <h2 className="text-2xl font-bold mb-6 text-white"> 🆕 Latest Posts</h2>
+      <h2 className="text-2xl font-bold mb-6 text-white">Latest Posts</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {latest.map((post) => (
           <Link
